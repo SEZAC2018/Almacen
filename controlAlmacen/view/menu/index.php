@@ -100,7 +100,8 @@
             <li class="left_nav_active theme_border"><a href="javascript:void(0);"><i class="fa fa-home"></i> Almacen <span class="left_nav_pointer"></span> <span class="plus"><i class="fa fa-plus"></i></span> </a>
               <ul class="opened" style="display:block">
                 <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Articulos</b> </a> </li>
-                <li> <a href="settings.html"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Provedores</b> </a> </li>
+
+                <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Provedores</b> </a> </li>
                 <li> <a href="layouts.html"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Almacen</b> </a> </li>
                 <li> <a href="layouts.html"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Compras</b> </a> </li>
                 
