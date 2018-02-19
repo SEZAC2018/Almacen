@@ -1,5 +1,5 @@
 <?php
-class Proveedores
+class Calendario
 {
     private $pdo;
     

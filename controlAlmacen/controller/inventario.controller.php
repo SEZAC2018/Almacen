@@ -1,25 +1,22 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/inventario.php';
 
-class ProveedorController{
+class InventarioController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Proveedores();
+        $this->model = new inventario();
     }
     
     public function Index(){
         
-        $page= 'view/proveedores/index.php';
+        $page= 'view/inventario/index.php';
         require_once 'view/menu/index.php';
     }
-
-
-
     
     public function Crud(){
-       $page= 'view/proveedores/proveedores.php';
+       $page= 'view/inventario/inventario.php';
         require_once 'view/menu/index.php';
     }
     

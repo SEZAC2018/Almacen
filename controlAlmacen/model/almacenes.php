@@ -1,5 +1,5 @@
 <?php
-class Proveedores
+class Almacen
 {
     private $pdo;
     

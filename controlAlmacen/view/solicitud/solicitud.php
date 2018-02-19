@@ -1,13 +1,13 @@
- <div class="pull-left breadcrumb_admin clear_both">
+<div class="pull-left breadcrumb_admin clear_both">
   <div class="pull-left page_title theme_color">
     <h1>Inicio</h1>
-    <h2 class="">Proveedores</h2>
+    <h2 class="">Solicitud</h2>
   </div>
   <div class="pull-right">
     <ol class="breadcrumb">
       <li><a href="?c=Inicio">Inicio</a></li>
-      <li><a href="?c=localidad">Proveedores</a></li>
-      <li class="active">Alta Proveedor</li>
+      <li><a href="?c=localidad">Solicitud</a></li>
+      <li class="active">Alta Solicitud</li>
     </ol>
   </div>
 </div>
@@ -19,7 +19,7 @@
           <div class="row" style="margin-top: 15px; margin-bottom: 12px;">
             <div class="col-sm-8">
               <div class="actions"> </div>
-              <h2 class="content-header theme_color" style="margin-top: -5px;">Registrar Proveedor</h2>
+              <h2 class="content-header theme_color" style="margin-top: -5px;">Registrar Solicitud</h2>
             </div>
             <div class="col-md-4">
               <div class="btn-group pull-right">
@@ -34,14 +34,14 @@
 
 
             <div class="form-group">
-              <label class="col-sm-3 control-label">Nombre Proveedor<strog class="theme_color">*</strog></label>
+              <label class="col-sm-3 control-label">Departamentor<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
                <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de el proveedor" />
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
-             <label class="col-sm-3 control-label">RFC: <strog class="theme_color">*</strog></label>
+             <label class="col-sm-3 control-label">Material Solicitado: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
               <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese RFC del proveedor"/>
             </div>
@@ -49,7 +49,7 @@
 
           <div class="form-group">
 
-             <label class="col-sm-3 control-label">Direcion: <strog class="theme_color">*</strog></label>
+             <label class="col-sm-3 control-label">Cantidad: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
               <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Direccion del proveedor"/>
             </div>

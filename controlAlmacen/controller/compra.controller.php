@@ -1,25 +1,22 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/compra.php';
 
-class ProveedorController{
+class CompraController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Proveedores();
+        $this->model = new Compra();
     }
     
     public function Index(){
         
-        $page= 'view/proveedores/index.php';
+        $page= 'view/compra/index.php';
         require_once 'view/menu/index.php';
     }
-
-
-
     
     public function Crud(){
-       $page= 'view/proveedores/proveedores.php';
+       $page= 'view/compra/compra.php';
         require_once 'view/menu/index.php';
     }
     

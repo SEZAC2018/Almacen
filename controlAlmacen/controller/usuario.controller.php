@@ -1,25 +1,22 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/usuarios.php';
 
-class ProveedorController{
+class UsuarioController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Proveedores();
+        $this->model = new Usuario();
     }
     
     public function Index(){
         
-        $page= 'view/proveedores/index.php';
+        $page= 'view/usuarios/index.php';
         require_once 'view/menu/index.php';
     }
-
-
-
     
     public function Crud(){
-       $page= 'view/proveedores/proveedores.php';
+       $page= 'view/usuarios/usuarios.php';
         require_once 'view/menu/index.php';
     }
     

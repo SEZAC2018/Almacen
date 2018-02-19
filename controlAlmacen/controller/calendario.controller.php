@@ -1,17 +1,17 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/inventario.php';
 
 class ProveedorController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Proveedores();
+        $this->model = new calendario();
     }
     
     public function Index(){
         
-        $page= 'view/proveedores/index.php';
+        $page= 'view/inventario/index.php';
         require_once 'view/menu/index.php';
     }
 
@@ -19,7 +19,7 @@ class ProveedorController{
 
     
     public function Crud(){
-       $page= 'view/proveedores/proveedores.php';
+       $page= 'view/inventario/calendario.php';
         require_once 'view/menu/index.php';
     }
     

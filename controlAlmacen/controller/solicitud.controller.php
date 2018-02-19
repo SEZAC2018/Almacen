@@ -1,17 +1,17 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/solicitud.php';
 
-class ProveedorController{
+class SolicitudController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Proveedores();
+        $this->model = new solicitud();
     }
     
     public function Index(){
         
-        $page= 'view/proveedores/index.php';
+        $page= 'view/solicitud/index.php';
         require_once 'view/menu/index.php';
     }
 
@@ -19,7 +19,7 @@ class ProveedorController{
 
     
     public function Crud(){
-       $page= 'view/proveedores/proveedores.php';
+       $page= 'view/solicitud/solicitud.php';
         require_once 'view/menu/index.php';
     }
     

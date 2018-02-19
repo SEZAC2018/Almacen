@@ -1,5 +1,5 @@
 <?php
-class Proveedores
+class Solicitud
 {
     private $pdo;
     
