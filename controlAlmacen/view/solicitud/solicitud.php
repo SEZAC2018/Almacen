@@ -34,7 +34,7 @@
 
 
             <div class="form-group">
-              <label class="col-sm-3 control-label">Departamentor<strog class="theme_color">*</strog></label>
+              <label class="col-sm-3 control-label">Departamento<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
                <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de el proveedor" />
              </div>

@@ -1,5 +1,5 @@
 <?php
-class Compra
+class Partida2
 {
     private $pdo;
     

@@ -36,22 +36,22 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Proveedor<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de el proveedor" />
+              <input type="text" class="form-control" maxlength="90" placeholder="Ingrese el Nombre del Proveedor">
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
              <label class="col-sm-3 control-label">RFC: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese RFC del proveedor"/>
+               <input type="text" class="form-control" maxlength="13" placeholder="Ingrese RFC del Proveedor">
             </div>
           </div><!--/form-group-->
 
           <div class="form-group">
 
-             <label class="col-sm-3 control-label">Direcion: <strog class="theme_color">*</strog></label>
+             <label class="col-sm-3 control-label">Dirección: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Direccion del proveedor"/>
+              <input type="text" class="form-control" maxlength="90" placeholder="Ingrese Direccion del proveedor"/>
             </div>
           </div><!--/form-group-->
          
@@ -60,7 +60,7 @@
    <div class="form-group">
     <div class="col-sm-offset-7 col-sm-5">
       <button type="submit" class="btn btn-primary">Guardar</button>
-      <a href="?c=Articulo" class="btn btn-default"> Cancelar</a>
+      <a href="?c=Proveedor" class="btn btn-default"> Cancelar</a>
     </div>
   </div><!--/form-group-->
 </form>

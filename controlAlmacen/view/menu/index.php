@@ -102,11 +102,12 @@
               <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Articulos</b> </a> </li>
 
                <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Provedores</b> </a> </li>
+               <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Usuarios</b> </a> </li>
 
                <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Almacen</b> </a> </li>
 
 
-                <li> <a href="?c=Compra"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Compras</b> </a> </li>
+                <li> <a href="?c=Partida"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Partida</b> </a> </li>
 
                  
                 <li> <a href="?c=Solicitud"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Solicitud</b> </a> </li>
@@ -114,7 +115,7 @@
                   <li> <a href="?c=Inventario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Inventario</b> </a> </li>
 
 
-                   <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Usuarioss</b> </a> </li>
+                   <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Calendario</b> </a> </li>
 
 
 

@@ -1,22 +1,22 @@
 <?php
-require_once 'model/compra.php';
+require_once 'model/partida.php';
 
-class CompraController{
+class PartidaController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Compra();
+        $this->model = new Partida();
     }
     
     public function Index(){
         
-        $page= 'view/compra/index.php';
+        $page= 'view/partida/index.php';
         require_once 'view/menu/index.php';
     }
     
     public function Crud(){
-       $page= 'view/compra/compra.php';
+       $page= 'view/partida/partida.php';
         require_once 'view/menu/index.php';
     }
     

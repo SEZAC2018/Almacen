@@ -1,25 +1,22 @@
 <?php
-require_once 'model/calendario.php';
+require_once 'model/partida2.php';
 
-class CalendarioController{
+class Partida2Controller{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Calendario();
+        $this->model = new Partida2();
     }
     
     public function Index(){
         
-        $page= 'view/calendario/index.php';
+        $page= 'view/partida2/index.php';
         require_once 'view/menu/index.php';
     }
-
-
-
     
     public function Crud(){
-       $page= 'view/calendario/calendario.php';
+       $page= 'view/partida2/partida2.php';
         require_once 'view/menu/index.php';
     }
     

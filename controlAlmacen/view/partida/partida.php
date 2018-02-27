@@ -1,13 +1,13 @@
  <div class="pull-left breadcrumb_admin clear_both">
   <div class="pull-left page_title theme_color">
     <h1>Inicio</h1>
-    <h2 class="">Almacenes</h2>
+    <h2 class="">Partida</h2>
   </div>
   <div class="pull-right">
     <ol class="breadcrumb">
       <li><a href="?c=Inicio">Inicio</a></li>
-      <li><a href="?c=localidad">Almacenes</a></li>
-      <li class="active">Alta Almacen</li>
+      <li><a href="?c=localidad">Partida</a></li>
+      <li class="active">Alta Partidao</li>
     </ol>
   </div>
 </div>
@@ -19,7 +19,7 @@
           <div class="row" style="margin-top: 15px; margin-bottom: 12px;">
             <div class="col-sm-8">
               <div class="actions"> </div>
-              <h2 class="content-header theme_color" style="margin-top: -5px;">Registrar almacen</h2>
+              <h2 class="content-header theme_color" style="margin-top: -5px;">Registrar Partida</h2>
             </div>
             <div class="col-md-4">
               <div class="btn-group pull-right">
@@ -34,19 +34,30 @@
 
 
             <div class="form-group">
-              <label class="col-sm-3 control-label">Nombre Almacen<strog class="theme_color">*</strog></label>
+              <label class="col-sm-3 control-label">Concepto<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
+               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de Articulo" />
              </div>
            </div><!--/form-group-->
-          
-         
+           <div class="form-group">
 
+             <label class="col-sm-3 control-label">Numero de Partida: <strog class="theme_color">*</strog></label>
+             <div class="col-sm-6">
+              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Cantidad Articulo"/>
+            </div>
+          </div><!--/form-group-->
+              <div class="form-group">
+
+             <label class="col-sm-3 control-label">Total Gastado: <strog class="theme_color">*</strog></label>
+             <div class="col-sm-6">
+              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Cantidad Articulo"/>
+            </div>
+          </div><!--/form-group-->
 
    <div class="form-group">
     <div class="col-sm-offset-7 col-sm-5">
       <button type="submit" class="btn btn-primary">Guardar</button>
-      <a href="?c=Almacen" class="btn btn-default"> Cancelar</a>
+      <a href="?c=Partida" class="btn btn-default"> Cancelar</a>
     </div>
   </div><!--/form-group-->
 </form>

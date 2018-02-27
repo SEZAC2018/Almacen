@@ -36,14 +36,14 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Articulo<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de Articulo" />
+             <input type="text" class="form-control" maxlength="60" placeholder="Ingrese el Nombre del Articulo">
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
              <label class="col-sm-3 control-label">Cantidad articulo: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Cantidad Articulo"/>
+             <input type="number" class="form-control" maxlength="20" placeholder="max 20 characters here">
             </div>
           </div><!--/form-group-->
           <div class="form-group">
@@ -64,14 +64,14 @@
           <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
           <div class="col-sm-6">
             <select class="form-control" name="ambito" required id="ambito">
-              <option value=""> 
+              <option value="1"> 
                Caja             
              </option>
-             <option value=""> 
+             <option value="2"> 
                Paquete            
              </option>
 
-             <option value=""> 
+             <option value="3"> 
                Pieza           
              </option>
            </select>
@@ -82,10 +82,10 @@
         <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
         <div class="col-sm-6">
           <select class="form-control" name="ambito" required id="ambito">
-            <option value=""> 
+            <option value="1"> 
               Consumible          
             </option>
-            <option value=""> 
+            <option value="2"> 
              Papeleria            
            </option>
 
