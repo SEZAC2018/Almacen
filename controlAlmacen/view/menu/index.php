@@ -51,7 +51,7 @@
     <link href="assets/plugins/wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
 
     <link href="assets/plugins/calendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-<link href="assets/plugins/calendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/calendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
 
   </head>
   <style type="text/css">
@@ -173,7 +173,7 @@
 
 <script src="assets/plugins/calendar/fullcalendar.min.js"></script>
 <script src="assets/plugins/calendar/external-draging-calendar.js"></script>
-<script src="js/jquery-ui.custom.min.js"></script>
+<script src="assets/js/jquery-ui.custom.min.js"></script>
 <!-- Include SmartWizard JavaScript source -->
 <script type="text/javascript" src="assets/plugins/wizard/js/jquery.smartWizard.js"></script>
 <!-- Include jQuery Validator plugin -->
