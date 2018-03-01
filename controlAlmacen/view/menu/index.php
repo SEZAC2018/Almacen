@@ -50,6 +50,9 @@
     <link href="assets/plugins/wizard/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
 
+    <link href="assets/plugins/calendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+<link href="assets/plugins/calendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
+
   </head>
   <style type="text/css">
     .disabled {
@@ -82,7 +85,7 @@
           </div>
           <div class="top_right_bar">
             <div style="margin-top: -33%;">
-            <span class="user_adminname">Hola </span>
+              <span class="user_adminname">Hola </span>
               <span class="user_adminname"><a href="?c=Login&a=Index"><i class="fa fa-power-off"></i> Salir</span></a>
             </div>
           </div>
@@ -96,83 +99,86 @@
           <!--\\\\\\\left_nav start \\\\\\-->
           <br>
           <div class="left_nav_slidebar">
-             <ul>
+           <ul>
             <li class="left_nav_active theme_border"><a href="javascript:void(0);"><i class="fa fa-home"></i> Almacen <span class="left_nav_pointer"></span> <span class="plus"><i class="fa fa-plus"></i></span> </a>
               <ul class="opened" style="display:block">
-              <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Articulos</b> </a> </li>
-
-               <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Provedores</b> </a> </li>
-               <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Usuarios</b> </a> </li>
-
-               <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Almacen</b> </a> </li>
 
 
-                <li> <a href="?c=Partida"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Partida</b> </a> </li>
+               <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Articulos</b> </a> </li>
 
-                 
-                <li> <a href="?c=Solicitud"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Solicitud</b> </a> </li>
+               <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Proveedores</b> </a> </li>
 
-                  <li> <a href="?c=Inventario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Inventario</b> </a> </li>
+               <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Usuarios</b> </a> </li>
+
+               <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Almacenes</b> </a> </li>
+
+               <li> <a href="?c=Solicitud"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Solicitudes</b> </a> </li>
+
+               <li> <a href="?c=Partida"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Partidas</b> </a> </li>
+
+               <li> <a href="?c=Inventario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Inventario</b> </a> </li>
+
+               <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Calendario</b> </a> </li>
 
 
-                   <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle theme_color"></i> <b class="theme_color">Calendario</b> </a> </li>
+             </ul>
+           </li>
+         </ul>
 
+       </div>
+     </div>
+   </div>
+   <!--\\\\\\\left_nav end \\\\\\-->
+   <div class="contentpanel">
+    <!--\\\\\\\ contentpanel start\\\\\\-->
 
+    <?php include($page); ?>
 
-               <!-- <li> <a href="?c=Compras> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Compras</b> </a> </li>///-->
-                
-              </ul>
-            </li>
-          </ul>
-
-          </div>
-        </div>
-      </div>
-      <!--\\\\\\\left_nav end \\\\\\-->
-      <div class="contentpanel">
-        <!--\\\\\\\ contentpanel start\\\\\\-->
-
-          <?php include($page); ?>
-
-      </div>
-      <!--\\\\\\\ content panel end \\\\\\-->
-    </div>
-    <!--\\\\\\\ inner end\\\\\\-->
   </div>
-  <!--\\\\\\\ wrapper end\\\\\\-->
-  <script src="assets/js/jquery-2.1.0.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/common-script.js"></script>
-  <script src="assets/js/jquery.slimscroll.min.js"></script>
-  <script type="text/javascript"  src="assets/plugins/toggle-switch/toggles.min.js"></script>
-  <script src="assets/plugins/checkbox/zepto.js"></script>
-  <script src="assets/plugins/checkbox/icheck.js"></script>
-  <script src="assets/js/icheck-init.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
-  <script type="text/javascript" src="assets/js/form-components.js"></script>
-  <script type="text/javascript"  src="assets/plugins/input-mask/jquery.inputmask.min.js"></script>
-  <script type="text/javascript"  src="assets/plugins/input-mask/demo-mask.js"></script>
-  <script type="text/javascript"  src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
-  <script type="text/javascript"  src="assets/plugins/dropzone/dropzone.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/ckeditor/ckeditor.js"></script>
-  <script src="assets/js/jPushMenu.js"></script>
-  <script src="assets/plugins/validation/parsley.min.js"></script>
-  <script src="assets/plugins/data-tables/jquery.dataTables.js"></script>
-  <script src="assets/plugins/data-tables/DT_bootstrap.js"></script>
-  <script src="assets/plugins/data-tables/dynamic_table_init.js"></script>
-  <script src="assets/plugins/edit-table/edit-table.js"></script>
-  <script src="assets/plugins/file-uploader/js/vendor/jquery.ui.widget.js"></script>
-  <script src="assets/plugins/file-uploader/js/jquery.iframe-transport.js"></script>
-  <script src="assets/plugins/file-uploader/js/jquery.fileupload.js"></script>
-  <script src="assets/plugins/validation/parsley.min.js"></script>
-  <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
-  <!-- Include SmartWizard JavaScript source -->
-  <script type="text/javascript" src="assets/plugins/wizard/js/jquery.smartWizard.js"></script>
-  <!-- Include jQuery Validator plugin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+  <!--\\\\\\\ content panel end \\\\\\-->
+</div>
+<!--\\\\\\\ inner end\\\\\\-->
+</div>
+<!--\\\\\\\ wrapper end\\\\\\-->
+<script src="assets/js/jquery-2.1.0.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/common-script.js"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/toggle-switch/toggles.min.js"></script>
+<script src="assets/plugins/checkbox/zepto.js"></script>
+<script src="assets/plugins/checkbox/icheck.js"></script>
+<script src="assets/js/icheck-init.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<script type="text/javascript" src="assets/js/form-components.js"></script>
+<script type="text/javascript"  src="assets/plugins/input-mask/jquery.inputmask.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/input-mask/demo-mask.js"></script>
+<script type="text/javascript"  src="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/dropzone/dropzone.min.js"></script>
+<script type="text/javascript" src="assets/plugins/ckeditor/ckeditor.js"></script>
+<script src="assets/js/jPushMenu.js"></script>
+<script src="assets/plugins/validation/parsley.min.js"></script>
+<script src="assets/plugins/data-tables/jquery.dataTables.js"></script>
+<script src="assets/plugins/data-tables/DT_bootstrap.js"></script>
+<script src="assets/plugins/data-tables/dynamic_table_init.js"></script>
+<script src="assets/plugins/edit-table/edit-table.js"></script>
+<script src="assets/plugins/file-uploader/js/vendor/jquery.ui.widget.js"></script>
+<script src="assets/plugins/file-uploader/js/jquery.iframe-transport.js"></script>
+<script src="assets/plugins/file-uploader/js/jquery.fileupload.js"></script>
+<script src="assets/plugins/validation/parsley.min.js"></script>
+<script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
+
+<script src="assets/plugins/calendar/fullcalendar.min.js"></script>
+<script src="assets/plugins/calendar/external-draging-calendar.js"></script>
+<script src="js/jquery-ui.custom.min.js"></script>
+<!-- Include SmartWizard JavaScript source -->
+<script type="text/javascript" src="assets/plugins/wizard/js/jquery.smartWizard.js"></script>
+<!-- Include jQuery Validator plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+
 
 </body>
 </html>

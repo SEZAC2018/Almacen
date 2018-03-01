@@ -35,7 +35,7 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre del departamento<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input type="text" class="form-control" maxlength="45" placeholder="Nombre del departamento">
+               <input onkeypress="return soloLetras(event);" onchange="mayus(this);" type="text" class="form-control" maxlength="45" placeholder="Nombre del departamento">
              </div>
            </div><!--/form-group-->
 
@@ -43,14 +43,14 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre(s)<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" maxlength="45" placeholder="Nombre del Empleado ">
+                <input onchange="mayus(this);" onkeypress="return soloLetras(event);" type="text" class="form-control" maxlength="45" placeholder="Nombre del Empleado ">
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
              <label class="col-sm-3 control-label">Primer Apellido: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-              <input type="text" class="form-control" maxlength="45" placeholder="Ingrese el Primer Apellido">
+              <input onchange="mayus(this);" onkeypress="return soloLetras(event);" type="text" class="form-control" maxlength="45" placeholder="Ingrese el Primer Apellido">
             </div>
           </div><!--/form-group-->
 
@@ -58,7 +58,7 @@
 
              <label class="col-sm-3 control-label">Segundo Apellido: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-               <input type="text" class="form-control" maxlength="45" placeholder="Ingrese el Segundo Apellido">
+               <input onchange="mayus(this);" onkeypress="return soloLetras(event);" type="text" class="form-control" maxlength="45" placeholder="Ingrese el Segundo Apellido">
             </div>
           </div><!--/form-group-->
           <div class="form-group">

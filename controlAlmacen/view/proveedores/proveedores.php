@@ -36,14 +36,14 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Proveedor<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-              <input type="text" class="form-control" maxlength="90" placeholder="Ingrese el Nombre del Proveedor">
+              <input onchange="mayus(this);" type="text" class="form-control" maxlength="50" placeholder="Ingrese el Nombre del Proveedor">
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
              <label class="col-sm-3 control-label">RFC: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-               <input type="text" class="form-control" maxlength="13" placeholder="Ingrese RFC del Proveedor">
+               <input onchange="mayus(this);"  type="text" class="form-control" maxlength="13" placeholder="Ingrese RFC del Proveedor">
             </div>
           </div><!--/form-group-->
 
@@ -51,7 +51,7 @@
 
              <label class="col-sm-3 control-label">Dirección: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-              <input type="text" class="form-control" maxlength="90" placeholder="Ingrese Direccion del proveedor"/>
+              <input onchange="mayus(this);" type="text" class="form-control" maxlength="90" placeholder="Ingrese Direccion del proveedor"/>
             </div>
           </div><!--/form-group-->
          

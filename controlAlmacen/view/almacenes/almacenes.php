@@ -36,7 +36,7 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Almacen<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
+               <input onchange="mayus(this);" maxlength="45" autofocus name="idLocalidad" id="idLocalidad" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
              </div>
            </div><!--/form-group-->
           

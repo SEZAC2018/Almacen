@@ -36,24 +36,25 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Articulo<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-             <input type="text" class="form-control" maxlength="60" placeholder="Ingrese el Nombre del Articulo">
+
+               <input onchange="mayus(this);" type="text" class="form-control" maxlength="70" placeholder="Ingrese el Nombre del Articulo">
              </div>
            </div><!--/form-group-->
            <div class="form-group">
 
              <label class="col-sm-3 control-label">Cantidad articulo: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-             <input type="number" class="form-control" maxlength="20" placeholder="max 20 characters here">
-            </div>
-          </div><!--/form-group-->
-          <div class="form-group">
+               <input onkeypress="return soloNumeros(event);" type="text" class="form-control" maxlength="12" placeholder="Ingrese la cantidad del Articulo">
+             </div>
+           </div><!--/form-group-->
+           <div class="form-group">
             <label class="col-sm-3 control-label">Almacen:<strog class="theme_color">*</strog></label>
             <div class="col-sm-6">
               <select class="form-control" name="ambito" required id="ambito">
-                <option value=""> 
+                <option value="1"> 
                  Almacen 1             
                </option>
-               <option value=""> 
+               <option value="2"> 
                  Almacen 2            
                </option>
              </select>
@@ -108,10 +109,10 @@
       <label class="col-sm-3 control-label">Partida:<strog class="theme_color">*</strog></label>
       <div class="col-sm-6">
         <select class="form-control" name="ambito" required id="ambito">
-          <option value=""> 
+          <option value="1"> 
             2111          
           </option>
-          <option value=""> 
+          <option value="2"> 
            2121            
          </option>
 
