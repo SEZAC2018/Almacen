@@ -105,18 +105,18 @@
             <div class="row">
               <div class="block-web">
                 <div class="header">
-                  <h3 class="content-header theme_color">&nbsp;Eliminar Municipio</h3>
+                  <h3 class="content-header theme_color">&nbsp;Eliminar Almacén</h3>
                 </div>
                 <div class="porlets-content" style="margin-bottom: -50px;">
-                  <h4>¿Esta segúro que desea eliminar el Municipio</h4>
+                  <h4>¿Esta segúro que desea eliminar el Almacén?</h4>
                 </div><!--/porlets-content-->
               </div><!--/block-web-->
             </div>
           </div>
           <div class="modal-footer" style="margin-top: -10px;">
             <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
-              <form action="?c=Municipio&a=Eliminar" enctype="multipart/form-data" method="post">
-                <input type="hidden" name="idMunicipio" id="txtIdMunicipio">
+              <form action="?c=Almacen&a=Eliminar" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="idAlmacen" id="txtIdAlmacen">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                 <button type="submit" class="btn btn-danger">Eliminar</button>
               </form>
