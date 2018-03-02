@@ -29,19 +29,20 @@
             </div>    
           </div>
         </div>
-        <div class="porlets-content">
-          <form action="" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
+
+        <div class="porlets-content">
+          <form  id="frm-almacen" action="?c=Almacen&a=Guardar" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
+
+          <!--este  no esta  agregarlo en todos -->
+            <input type="hidden" name="idAlmacen" value="<?php echo $almacen->idAlmacen; ?>" />
 
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Almacen<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input onchange="mayus(this);" maxlength="45" autofocus name="idLocalidad" id="idLocalidad" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
+               <input onchange="mayus(this);" maxlength="45" autofocus name="nombre" id="nombre" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
              </div>
            </div><!--/form-group-->
-           
-           
-
 
            <div class="form-group">
             <div class="col-sm-offset-7 col-sm-5">
