@@ -41,7 +41,7 @@
                 <div class="row">
 
            
-                  <div class="col-sm-6">
+                  <div class="col-md-8">
                     <div class="block-web">
                       <div id='calendar'></div>
                     </div>
