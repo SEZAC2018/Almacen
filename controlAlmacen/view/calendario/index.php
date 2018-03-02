@@ -16,7 +16,7 @@
           <div class="col-md-12">
             <div class="block-web">
               <div class="header">
-                <div class="row" style="margin-top: 15px; margin-bottom: 12px;">
+                <div class="row" style="margin-top: 15px; margin-bottom: 4px;">
                   <div class="col-sm-7">
                     <div class="actions"> </div>
                     <h2 class="content-header theme_color" style="margin-top: -5px;">&nbsp;&nbsp;Articulos</h2>
@@ -25,8 +25,8 @@
                     <div class="btn-group pull-right">
                       <b>
 
-                        <div class="btn-group" style="margin-right: 10px;">
-                          <a class="btn btn-sm btn-success tooltips" href="?c=Articulo&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registrar </a>
+                        <div class="btn-group" style="margin-right: 8px;">
+                          <a class="btn btn-sm btn-success tooltips" href="?c=Articulo&a=Crud" style="margin-right: 8px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registrar </a>
 
                         </div>
 
@@ -35,13 +35,13 @@
                   </div>
                 </div>
               </div>
-
+   
 
               <div class="porlets-content">
                 <div class="row">
 
            
-                  <div class="col-md-10">
+                  <div class="col-sm-6">
                     <div class="block-web">
                       <div id='calendar'></div>
                     </div>
@@ -52,3 +52,4 @@
             </div><!--/block-web-->
           </div><!--/col-md-12-->
         </div><!--/row-->
+        
