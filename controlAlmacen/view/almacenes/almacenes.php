@@ -39,19 +39,19 @@
                <input onchange="mayus(this);" maxlength="45" autofocus name="idLocalidad" id="idLocalidad" class="form-control" required value="" placeholder="Ingrese el nombre de el Almacen" />
              </div>
            </div><!--/form-group-->
-          
-         
+           
+           
 
 
-   <div class="form-group">
-    <div class="col-sm-offset-7 col-sm-5">
-      <button type="submit" class="btn btn-primary">Guardar</button>
-      <a href="?c=Almacen" class="btn btn-default"> Cancelar</a>
-    </div>
-  </div><!--/form-group-->
-</form>
-</div><!--/porlets-content-->
-</div><!--/block-web-->
-</div><!--/col-md-12-->
+           <div class="form-group">
+            <div class="col-sm-offset-7 col-sm-5">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <a href="?c=Almacen" class="btn btn-default"> Cancelar</a>
+            </div>
+          </div><!--/form-group-->
+        </form>
+      </div><!--/porlets-content-->
+    </div><!--/block-web-->
+  </div><!--/col-md-12-->
 </div><!--/row-->
 </div><!--/container clear_both padding_fix--> 
