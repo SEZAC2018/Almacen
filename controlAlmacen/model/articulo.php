@@ -2,7 +2,15 @@
 class Articulo
 {
     private $pdo;
-    
+    public $idArticulo;
+    public $nombre;
+    public $cantidad;
+    public $idAlmacen;
+    public $unidadMedidad;
+    public $fechaCaducidad;
+    public $tipoArticulo;
+     public $idPartida;
+   
    
     public function __CONSTRUCT()
     {
