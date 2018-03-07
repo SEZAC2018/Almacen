@@ -61,6 +61,7 @@ class Almacen
     }
 
     public function Registrar(Almacen $data)
+   // echo "entre";
     {
         try 
         {

@@ -35,7 +35,7 @@
           <form  id="frm-almacen" action="?c=Almacen&a=Guardar" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
           <!--este  no esta  agregarlo en todos -->
-            <input type="hidden" name="idAlmacen" value="<?php echo $almacen->idAlmacen; ?>" />
+            <input  name="idAlmacen" value="<?php echo $almacen->idAlmacen; ?>" />
 
             <div class="form-group">
               <label class="col-sm-3 control-label">Nombre Almacen<strog class="theme_color">*</strog></label>
