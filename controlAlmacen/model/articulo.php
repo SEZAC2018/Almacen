@@ -30,7 +30,7 @@ class Articulo
       {
         $result = array();
 
-        $stm = $this->pdo->prepare("SELECT * FROM articulos");
+        $stm = $this->pdo->prepare("SELECT * FROM articulo");
         $stm->execute();
 
         return $stm->fetchAll(PDO::FETCH_OBJ);

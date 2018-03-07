@@ -49,7 +49,7 @@ class ArticuloController{
         ? $this->model->Actualizar($articulo)
         : $this->model->Registrar($articulo);
 
-        $page= 'view/articuloindex.php';
+        $page= 'view/articulo/index.php';
         require_once 'view/menu/index.php';
         
     }
