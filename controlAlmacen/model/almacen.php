@@ -4,6 +4,13 @@ class Almacen
     private $pdo;
     public $idAlmacen;
     public $nombre;
+    public $cantidad;
+    public $idAlmacen; 
+    public $unidadMedidad;
+    public $fechaCaducidad;
+    public $tipoArticulo;
+    public $idPartida;
+
 
     public function __CONSTRUCT()
     {

@@ -79,6 +79,15 @@
          </div>
        </div><!--/form-group-->
 
+
+       <div class="form-group">
+
+      <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control mask" data-inputmask="'alias': 'date'">
+      </div>
+    </div><!--/form-group-->
+
        <div class="form-group">
         <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
         <div class="col-sm-6">
@@ -96,13 +105,7 @@
      </div><!--/form-group-->
 
 
-     <div class="form-group">
-
-      <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control mask" data-inputmask="'alias': 'date'">
-      </div>
-    </div><!--/form-group-->
+     
 
 
     <div class="form-group">
