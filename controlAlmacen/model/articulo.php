@@ -9,9 +9,9 @@ class Articulo
     public $unidadMedidad;
     public $fechaCaducidad;
     public $tipoArticulo;
-     public $idPartida;
-   
-   
+    public $idPartida;
+    
+    
     public function __CONSTRUCT()
     {
         try
@@ -27,58 +27,80 @@ class Articulo
     public function Listar()
     {
       try
-        {
-            $result = array();
+      {
+        $result = array();
 
-            $stm = $this->pdo->prepare("SELECT * FROM articulos");
-            $stm->execute();
+        $stm = $this->pdo->prepare("SELECT * FROM articulos");
+        $stm->execute();
 
-            return $stm->fetchAll(PDO::FETCH_OBJ);
-        }
-        catch(Exception $e)
-        {
-            die($e->getMessage());
-        }
+        return $stm->fetchAll(PDO::FETCH_OBJ);
     }
-
-    public function Obtener($id)
+    catch(Exception $e)
     {
-        try 
-        {
-            $stm = $this->pdo
-                      ->prepare("SELECT * FROM  articulos WHERE idArticulo = ?");
-                      
-
-            $stm->execute(array($id));
-            return $stm->fetch(PDO::FETCH_OBJ);
-        } catch (Exception $e) 
-        {
-            die($e->getMessage());
-        }
-       
+        die($e->getMessage());
     }
+}
 
-    public function Eliminar($id)
+public function Obtener($id)
+{
+    try 
     {
-        try 
-        {
-            $stm = $this->pdo
-                        ->prepare("DELETE FROM articulos WHERE idArticulo = ?");                    
+        $stm = $this->pdo
+        ->prepare("SELECT * FROM  articulos WHERE idArticulo = ?");
+        
 
-            $stm->execute(array($id));
-        } catch (Exception $e) 
-        {
-            die($e->getMessage());
-        }   
-    }
-
-    public function Actualizar($data)
+        $stm->execute(array($id));
+        return $stm->fetch(PDO::FETCH_OBJ);
+    } catch (Exception $e) 
     {
-       
+        die($e->getMessage());
     }
+    
+}
 
-    public function Registrar(Alumno $data)
+public function Eliminar($id)
+{
+    try 
     {
-       
-    }
+        $stm = $this->pdo
+        ->prepare("DELETE FROM articulos WHERE idArticulo = ?");                    
+
+        $stm->execute(array($id));
+    } catch (Exception $e) 
+    {
+        die($e->getMessage());
+    }   
+}
+
+public function Actualizar($data)
+{
+ 
+}
+
+public function Registrar(Articulo $data)
+{
+   try 
+   {
+    $sql = "INSERT INTO articulo (nombre) 
+    VALUES (?)";
+
+    $this->pdo->prepare($sql)
+    ->execute(
+        array(
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            $data->nombre
+            )
+        );
+} catch (Exception $e) 
+{
+    die($e->getMessage());
+}
+
+}
 }
