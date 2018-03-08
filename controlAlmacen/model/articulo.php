@@ -79,7 +79,7 @@ class Articulo
         $this->pdo->prepare($sql)
         ->execute(
             array(
-                $data->nombre
+                $data->nombre,
                 $data->cantidad, 
                 $data->idAlmacen,
                 $data->unidadMedidad,
