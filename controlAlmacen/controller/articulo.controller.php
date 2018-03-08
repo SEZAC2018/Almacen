@@ -7,6 +7,7 @@ class ArticuloController{
     
     public function __CONSTRUCT(){
         $this->model = new Articulo();
+        $this->model = new Partida();
     }
     
     public function Index(){

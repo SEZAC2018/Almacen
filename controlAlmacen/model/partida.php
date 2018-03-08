@@ -18,6 +18,21 @@ class Partida
 
     public function Listar()
     {
+        {
+        try
+        {
+            $result = array();
+
+            $stm = $this->pdo->prepare("SELECT * FROM partida");
+            $stm->execute();
+
+            return $stm->fetchAll(PDO::FETCH_OBJ);
+        }
+        catch(Exception $e)
+        {
+            die($e->getMessage());
+        }
+
       
     }
 

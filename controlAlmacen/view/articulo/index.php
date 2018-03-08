@@ -26,7 +26,7 @@
                       <b>
 
                         <div class="btn-group" style="margin-right: 10px;">
-                        <a class="btn btn-sm btn-success tooltips" href="?c=Articulo&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registrar </a>
+                          <a class="btn btn-sm btn-success tooltips" href="?c=Articulo&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registrar </a>
 
                         </div>
 
@@ -57,44 +57,30 @@
                     </thead>
                     <tbody>
 
+
+                      <?php foreach ($this->model->Listar() as $r): ?> 
+
+                      }
                       <tr class="gradeA">
 
-                        <td>Hojas de Maquina</td>
-                        <td>2 </td>
-                        <td>Almacen 1</td>
-                        <td>Caja</td>
-                        <td>02/08/2018</td>
-                        <td>Consumible</td>
-                        <td>2111</td>
+                        <td><?php echo $r->nombre;?></td>
+                        <td> <?php echo $r->cantidad; ?></td>
+                        <td> <?php echo $r->idAlmacen; ?></td>
+                        <td> <?php echo $r->unidadMedidad; ?></td>
+                        <td> <?php echo $r->fechaCaducidad; ?></td>
+                        <td> <?php echo $r->tipoArticulo; ?></td>
+                        <td> <?php echo $r->idPartida; ?></td>
 
                         <td class="center">
-                          <a href="registrarArticulo.php" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
+                          <a href="index.php?c=Articulo&a=Crud&idArticulo=<?php echo $r->idArticulo ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
                         </td>
                         <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
+                          <a onclick="eliminarArticulo(<?php echo $r->idArticulo;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
                         </td>
 
                       </tr>
-
-                      <tr class="gradeA">
-
-                        <td>Plumas</td>
-                        <td>2 </td>
-                        <td>Almacen 2</td>
-                        <td>Paquetes</td>
-                        <td>02/08/2018</td>
-                        <td>Consumible</td>
-                        <td>2111</td>
-
-                        <td class="center">
-                          <a href="index.php?c=Direccion&a=Crud&idDireccion=<?php echo $r->idDireccion ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
-                        </td>
-                        <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
-                        </td>
-
-                      </tr>
-                    </tr>
+                    <?php endforeach; ?>
+                    
 
                   </tbody>
                   <tfoot>
@@ -121,44 +107,44 @@
       </div><!--/row-->
 
 
-    <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content  panel default red_border horizontal_border_1">
-          <div class="modal-body">
-            <div class="row">
-              <div class="block-web">
-                <div class="header">
-                  <h3 class="content-header theme_color">&nbsp;Eliminar Artículo</h3>
-                </div>
-                <div class="porlets-content" style="margin-bottom: -50px;">
-                  <h4>¿Esta segúro que desea eliminar el Artículo?</h4>
-                </div><!--/porlets-content-->
-              </div><!--/block-web-->
+      <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content  panel default red_border horizontal_border_1">
+            <div class="modal-body">
+              <div class="row">
+                <div class="block-web">
+                  <div class="header">
+                    <h3 class="content-header theme_color">&nbsp;Eliminar Artículo</h3>
+                  </div>
+                  <div class="porlets-content" style="margin-bottom: -50px;">
+                    <h4>¿Esta segúro que desea eliminar el Artículo?</h4>
+                  </div><!--/porlets-content-->
+                </div><!--/block-web-->
+              </div>
             </div>
-          </div>
-          <div class="modal-footer" style="margin-top: -10px;">
-            <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
-              <form action="?c=Articulo&a=Eliminar" enctype="multipart/form-data" method="post">
-                <input type="hidden" name="idArticulo" id="txtIdArticulo">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-danger">Eliminar</button>
-              </form>
+            <div class="modal-footer" style="margin-top: -10px;">
+              <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
+                <form action="?c=Articulo&a=Eliminar" enctype="multipart/form-data" method="post">
+                  <input type="hidden" name="idArticulo" id="txtIdArticulo">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </div><!--/modal-content-->
-      </div><!--/modal-dialog-->
-</div><!--/modal-fade-->
+          </div><!--/modal-content-->
+        </div><!--/modal-dialog-->
+      </div><!--/modal-fade-->
 
-<script>
-
+      <script>
 
 
-  eliminarDireccion = function(idArticulo){
-   
-    $('#txtIdArticulo').val(idMunicipio);
-  };
-   deshabilitar = function (){
-  $('#btnImportar').attr("disabled", true);
-}
-</script>
+
+        eliminarDireccion = function(idArticulo){
+
+          $('#txtIdArticulo').val(idArticulo);
+        };
+        deshabilitar = function (){
+          $('#btnImportar').attr("disabled", true);
+        }
+      </script>
 
