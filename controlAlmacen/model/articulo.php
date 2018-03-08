@@ -71,15 +71,15 @@ class Articulo
 
     public function Registrar(Articulo $data)
     {
-     try 
-     {
+       try 
+       {
         $sql = "INSERT INTO articulos (nombre,cantidad,idAlmacen,unidadMedidad,fechaCaducidad,tipoArticulo,idPartida) 
         VALUES (?,?,?,?,?,?,?)";
 
         $this->pdo->prepare($sql)
         ->execute(
             array(
-                $data->nombre
+                $data->nombre,
                 $data->cantidad, 
                 $data->idAlmacen,
                 $data->unidadMedidad,
@@ -94,4 +94,5 @@ class Articulo
     }
     
 }
+
 }
