@@ -63,7 +63,7 @@
                         <td class="center">
                           <a onclick="eliminarMunicipio(<?php echo $r->idMunicipio;?>);" class="btn btn-danger btn-sm" href="#modalEliminar" style="margin-right: 10px;"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
                         </td>
-                
+
                       </tr>
                     <?php endforeach; ?>
 
@@ -77,49 +77,6 @@
                       <td><center><b>Borrar</b></center></td>
 
                     </tr>
-<<<<<<< HEAD
-                  </tr>
-
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <th>Nombre</th>
-
-                    <td><center><b>Editar</b></center></td>
-                    <td><center><b>Borrar</b></center></td>
-
-                  </tr>
-                </tfoot>
-              </table>
-            </div><!--/table-responsive-->
-          </div><!--/porlets-content-->
-        </div><!--/block-web-->
-      </div><!--/col-md-12-->
-    </div><!--/row-->
-
-    <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content  panel default red_border horizontal_border_1">
-          <div class="modal-body">
-            <div class="row">
-              <div class="block-web">
-                <div class="header">
-                  <h3 class="content-header theme_color">&nbsp;Eliminar Almacén</h3>
-                </div>
-                <div class="porlets-content" style="margin-bottom: -50px;">
-                  <h4>¿Esta segúro que desea eliminar el Almacén?</h4>
-                </div><!--/porlets-content-->
-              </div><!--/block-web-->
-            </div>
-          </div>
-          <div class="modal-footer" style="margin-top: -10px;">
-            <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
-              <form action="?c=Almacen&a=Eliminar" enctype="multipart/form-data" method="post">
-                <input type="hidden" name="idAlmacen" id="txtIdAlmacen">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-danger">Eliminar</button>
-              </form>
-=======
                   </tfoot>
                 </table>
               </div><!--/table-responsive-->
@@ -135,37 +92,40 @@
               <div class="row">
                 <div class="block-web">
                   <div class="header">
-                    <h3 class="content-header theme_color">&nbsp;Eliminar Municipio</h3>
+                    <h3 class="content-header theme_color">&nbsp;Eliminar Almacén</h3>
                   </div>
                   <div class="porlets-content" style="margin-bottom: -50px;">
-                    <h4>¿Esta segúro que desea eliminar el Municipio</h4>
+                    <h4>¿Esta segúro que desea eliminar el Almacén?</h4>
                   </div><!--/porlets-content-->
                 </div><!--/block-web-->
               </div>
             </div>
             <div class="modal-footer" style="margin-top: -10px;">
               <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
-                <form action="?c=Municipio&a=Eliminar" enctype="multipart/form-data" method="post">
-                  <input type="hidden" name="idMunicipio" id="txtIdMunicipio">
+                <form action="?c=Almacen&a=Eliminar" enctype="multipart/form-data" method="post">
+                  <input type="hidden" name="idAlmacen" id="txtIdAlmacen">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                   <button type="submit" class="btn btn-danger">Eliminar</button>
                 </form>
-              </div>
->>>>>>> 96467136e11a41e9a5768e8651516047a03adb11
-            </div>
-          </div><!--/modal-content-->
-        </div><!--/modal-dialog-->
-      </div><!--/modal-fade-->
+       
+              </tfoot>
+            </table>
+          </div><!--/table-responsive-->
+        </div><!--/porlets-content-->
+      </div><!--/block-web-->
+    </div><!--/col-md-12-->
+  </div><!--/row-->
 
-      <script>
+
+  <script>
 
 
 
-        eliminarDireccion = function(idMunicipio){
+    eliminarDireccion = function(idMunicipio){
 
-          $('#txtIdMunicipio').val(idMunicipio);
-        };
-        deshabilitar = function (){
-          $('#btnImportar').attr("disabled", true);
-        }
-      </script>
+      $('#txtIdMunicipio').val(idMunicipio);
+    };
+    deshabilitar = function (){
+      $('#btnImportar').attr("disabled", true);
+    }
+  </script>

@@ -18,7 +18,7 @@ class AlmacenController{
     
     public function Crud(){
       $almacen = new Almacen();
-
+      //echo "soy".$_REQUEST['idAlmacen'];
       if(isset($_REQUEST['idAlmacen'])){
         $almacen = $this->model->Obtener($_REQUEST['idAlmacen']);
     }
@@ -27,12 +27,11 @@ class AlmacenController{
     require_once 'view/menu/index.php';
 }
 
-public function Guardar(){
+public function Guardar()
+{
 
     $almacen = new Almacen();
-
     $almacen->idAlmacen = $_REQUEST['idAlmacen'];
-
     $almacen->nombre = $_REQUEST['nombre'];
 
     
