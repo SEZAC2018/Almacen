@@ -65,7 +65,7 @@
 
                         <td><?php echo $r->nombre;?></td>
                         <td> <?php echo $r->cantidad; ?></td>
-                        <td> <?php echo $r->nomArticulo; ?></td>
+                        <td> <?php echo $r->nomAlmacen; ?></td>
                         <td> <?php echo $r->unidadMedidad; ?></td>
                         <td> <?php echo $r->fechaCaducidad; ?></td>
                         <td> <?php echo $r->tipoArticulo; ?></td>
