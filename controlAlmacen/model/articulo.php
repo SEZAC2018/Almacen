@@ -83,7 +83,7 @@ class Articulo
                 $data->cantidad, 
                 $data->idAlmacen,
                 $data->unidadMedidad,
-                date('Y-m-d'),
+                $data->fechaCaducidad,
                 $data->tipoArticulo,
                 $data->idPartida
                 )
