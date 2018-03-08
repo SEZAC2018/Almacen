@@ -30,7 +30,7 @@ class Articulo
         {
             $result = array();
 
-            $stm = $this->pdo->prepare("SELECT  articulos.idArticulo, articulos.nombre, articulos.cantidad, articulos. unidadMedidad, articulos.fechaCaducidad, articulos.tipoArticulo, almacen.nombre as nomArticulo, partida.concepto  FROM articulos, almacen, partida where articulos.idPartida = partida.idPartida AND articulos.idAlmacen =  almacen.idAlmacen;");
+            $stm = $this->pdo->prepare("SELECT  articulos.*, almacen.nombre as nomAlmacen, partida.concepto  FROM articulos, almacen, partida where articulos.idPartida = partida.idPartida AND articulos.idAlmacen =  almacen.idAlmacen;");
             $stm->execute();
 
             return $stm->fetchAll(PDO::FETCH_OBJ);

@@ -20,7 +20,14 @@ class ArticuloController{
     }
     
     public function Crud(){
-      
+        $articulos = new Articulo();
+      //echo "soy".$_REQUEST['idAlmacen'];
+      if(isset($_REQUEST['idArticulo'])){
+        $almacen = $this->model->Obtener($_REQUEST['idArticulo']);
+    }
+
+    $page= 'view/articulo/articulo.php';
+    require_once 'view/menu/index.php';
     }
 
     public function Guardar(){

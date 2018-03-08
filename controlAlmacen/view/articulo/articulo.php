@@ -30,9 +30,6 @@
           </div>
         </div>
         <div class="porlets-content">
-
-
-
           <div class="porlets-content">
             <form  id="frm-articulo" action="?c=Articulo&a=Guardar" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
@@ -82,15 +79,15 @@
           <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
           <div class="col-sm-6">
             <select class="form-control" name="unidadMedidad" required id="ambito">
-              <option value="1"> 
-               Caja             
+              <option value="CAJA"> 
+               CAJA          
              </option>
-             <option value="2"> 
-               Paquete            
+             <option value="PAQUETE"> 
+               PAQUETE           
              </option>
 
-             <option value="3"> 
-               Pieza           
+             <option value="PIEZA"> 
+               PIEZA          
              </option>
            </select>
          </div>
@@ -98,7 +95,6 @@
 
 
        <div class="form-group">
-
         <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
         <div class="col-sm-6">
           <input type="text" class="form-control mask" name="fechaCaducidad" data-inputmask="'alias': 'date'">
@@ -109,11 +105,11 @@
         <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
         <div class="col-sm-6">
           <select class="form-control" name="tipoArticulo" required id="ambito">
-            <option value="1"> 
-              Consumible          
+            <option value="CONSUMIBLE"> 
+              CONSUMIBLE         
             </option>
-            <option value="2"> 
-             Papeleria            
+            <option value="PAPELERIA"> 
+             PAPELERIA           
            </option>
 
 
@@ -128,24 +124,22 @@
 
 
 
-     <div class="form-group" id="idPartida">
+
+     <div class="form-group">
       <label class="col-sm-3 control-label">Partida<strog class="theme_color">*</strog></label>
       <div class="col-sm-6">
-        <select name="idPartida" class="form-control" required id="concepto">
+        <select name="idPartida" class="form-control" required>
           <?php if($articulos->idPartida==null){ ?>
-          <option value="1">
-            <!--/muestra el mensaje-->
-            Seleccione la identificación oficial del beneficiario
+          <option value="">
+            Seleccione la partida perteniciente
           </option>
-          <!--/muestra los articulos al actualizar-->
           <?php } if($articulos->idPartida!=null){ ?>
-          <option value="<?php echo $articulos->idPartida?>">
-            <?php echo $articulos->idPartida; ?>
+          <option value="<?php echo $articulos->idPartida ?>">
+            <?php echo $articulos->concepto; ?>
           </option>
-          <!--/muestra los articulos listaooos-->
-          <?php } foreach($this->model2->Listar() as $r):
-          if($r->idPartida!=$articulos->idPartida){ ?>
-          <option value="<?php echo $partida->idPartida; ?>">
+          <?php } foreach($this->model1->Listar() as $r):
+          if($r->concepto!=$articulos->concepto){ ?>
+          <option value="<?php echo $r->idPartida; ?>">
             <?php echo $r->concepto; ?>
           </option>
           <?php } endforeach; ?>
@@ -153,7 +147,6 @@
         <div class="help-block with-errors"></div>
       </div>
     </div><!--/form-group-->
-
 
     <div class="form-group">
       <div class="col-sm-offset-7 col-sm-5">
