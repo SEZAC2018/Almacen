@@ -34,6 +34,8 @@ public function Guardar(){
     $almacen->idAlmacen = $_REQUEST['idAlmacen'];
 
     $almacen->nombre = $_REQUEST['nombre'];
+
+    
     $almacen->idAlmacen > 0 
     ? $this->model->Actualizar($almacen)
     : $this->model->Registrar($almacen);

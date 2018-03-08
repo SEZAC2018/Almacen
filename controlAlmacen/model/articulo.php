@@ -3,7 +3,15 @@ class Articulo
 {
     private $pdo;
     public $idArticulo;
-   
+    public $nombre;
+    public $cantidad;
+    public $idAlmacen;
+    public $unidadMedidad;
+    public $fechaCaducidad;
+    public $tipoArticulo;
+    public $idPartida;
+
+
     public function __CONSTRUCT()
     {
         try
@@ -31,7 +39,7 @@ class Articulo
         {
             die($e->getMessage());
         }
-      
+
     }
 
     public function Obtener($id)
@@ -48,21 +56,42 @@ class Articulo
         {
             die($e->getMessage());
         }
-       
+
     }
 
     public function Eliminar($id)
     {
-        
+
     }
 
     public function Actualizar($data)
     {
-       
+
     }
 
-    public function Registrar(Alumno $data)
+    public function Registrar(Articulo $data)
     {
-       
+     try 
+     {
+        $sql = "INSERT INTO articulos (nombre,cantidad,idAlmacen,unidadMedidad,fechaCaducidad,tipoArticulo,idPartida) 
+        VALUES (?,?,?,?,?,?,?)";
+
+        $this->pdo->prepare($sql)
+        ->execute(
+            array(
+                $data->nombre
+                $data->cantidad, 
+                $data->idAlmacen,
+                $data->unidadMedidad,
+                date('Y-m-d'),
+                $data->tipoArticulo,
+                $data->idPartida
+                )
+            );
+    } catch (Exception $e) 
+    {
+        die($e->getMessage());
     }
+    
+}
 }

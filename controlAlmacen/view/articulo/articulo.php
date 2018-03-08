@@ -32,107 +32,122 @@
         <div class="porlets-content">
           <form action="" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
+            <div class="porlets-content">
+              <form  id="frm-articulo" action="?c=Articulo&a=Guardar" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Nombre Articulo<strog class="theme_color">*</strog></label>
+                <!--este  no esta  agregarlo en todos -->
+                <input type="hidden" name="idArticulo" value="<?php echo $articulo->idArticulo; ?>" />
+
+
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Nombre Articulo<strog class="theme_color">*</strog></label>
+                  <div class="col-sm-6">
+
+                   <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombre" id="nombre" 
+                   maxlength="70" required value="" placeholder="Ingrese el Nombre del Articulo">
+                 </div>
+               </div><!--/form-group-->
+               <div class="form-group">
+
+
+
+                 autofocus name="nombre" id="nombre" 
+
+
+
+
+
+                 <label class="col-sm-3 control-label">Cantidad articulo: <strog class="theme_color">*</strog></label>
+                 <div class="col-sm-6">
+                 <input onkeypress="return soloNumeros(event);" type="text" class="form-control"  autofocus name="cantidad" maxlength="12" placeholder="Ingrese la cantidad del Articulo">
+                 </div>
+               </div><!--/form-group-->
+               <div class="form-group">
+                <label class="col-sm-3 control-label">Almacen:<strog class="theme_color">*</strog></label>
+                <div class="col-sm-6">
+                  <select class="form-control" name="ambito" required id="ambito">
+                    <option value="1"> 
+                     Almacen 1             
+                   </option>
+                   <option value="2"> 
+                     Almacen 2            
+                   </option>
+                 </select>
+               </div>
+             </div><!--/form-group-->
+
+             <div class="form-group">
+              <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
+                <select class="form-control" name="ambito" required id="ambito">
+                  <option value="1"> 
+                   Caja             
+                 </option>
+                 <option value="2"> 
+                   Paquete            
+                 </option>
 
-               <input onchange="mayus(this);" type="text" class="form-control" maxlength="70" placeholder="Ingrese el Nombre del Articulo">
+                 <option value="3"> 
+                   Pieza           
+                 </option>
+               </select>
              </div>
            </div><!--/form-group-->
+
+
            <div class="form-group">
 
-             <label class="col-sm-3 control-label">Cantidad articulo: <strog class="theme_color">*</strog></label>
-             <div class="col-sm-6">
-               <input onkeypress="return soloNumeros(event);" type="text" class="form-control" maxlength="12" placeholder="Ingrese la cantidad del Articulo">
-             </div>
-           </div><!--/form-group-->
-           <div class="form-group">
-            <label class="col-sm-3 control-label">Almacen:<strog class="theme_color">*</strog></label>
+            <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control mask" data-inputmask="'alias': 'date'">
+            </div>
+          </div><!--/form-group-->
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
             <div class="col-sm-6">
               <select class="form-control" name="ambito" required id="ambito">
                 <option value="1"> 
-                 Almacen 1             
+                  Consumible          
+                </option>
+                <option value="2"> 
+                 Papeleria            
                </option>
-               <option value="2"> 
-                 Almacen 2            
-               </option>
+
+
              </select>
            </div>
          </div><!--/form-group-->
 
+
+
+
+
          <div class="form-group">
-          <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
+          <label class="col-sm-3 control-label">Partida:<strog class="theme_color">*</strog></label>
           <div class="col-sm-6">
             <select class="form-control" name="ambito" required id="ambito">
               <option value="1"> 
-               Caja             
-             </option>
-             <option value="2"> 
-               Paquete            
+                2111          
+              </option>
+              <option value="2"> 
+               2121            
              </option>
 
-             <option value="3"> 
-               Pieza           
-             </option>
+
            </select>
          </div>
        </div><!--/form-group-->
 
 
        <div class="form-group">
-
-      <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control mask" data-inputmask="'alias': 'date'">
-      </div>
-    </div><!--/form-group-->
-
-       <div class="form-group">
-        <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
-        <div class="col-sm-6">
-          <select class="form-control" name="ambito" required id="ambito">
-            <option value="1"> 
-              Consumible          
-            </option>
-            <option value="2"> 
-             Papeleria            
-           </option>
-
-
-         </select>
-       </div>
-     </div><!--/form-group-->
-
-
-     
-
-
-    <div class="form-group">
-      <label class="col-sm-3 control-label">Partida:<strog class="theme_color">*</strog></label>
-      <div class="col-sm-6">
-        <select class="form-control" name="ambito" required id="ambito">
-          <option value="1"> 
-            2111          
-          </option>
-          <option value="2"> 
-           2121            
-         </option>
-
-
-       </select>
-     </div>
-   </div><!--/form-group-->
-
-
-   <div class="form-group">
-    <div class="col-sm-offset-7 col-sm-5">
-      <button type="submit" class="btn btn-primary">Guardar</button>
-      <a href="?c=Articulo" class="btn btn-default"> Cancelar</a>
-    </div>
-  </div><!--/form-group-->
-</form>
-</div><!--/porlets-content-->
+        <div class="col-sm-offset-7 col-sm-5">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+          <a href="?c=Articulo" class="btn btn-default"> Cancelar</a>
+        </div>
+      </div><!--/form-group-->
+    </form>
+  </div><!--/porlets-content-->
 </div><!--/block-web-->
 </div><!--/col-md-12-->
 </div><!--/row-->
