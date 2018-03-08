@@ -2,8 +2,11 @@
 class Partida
 {
     private $pdo;
-    
-   
+    public $idPartida;
+    public $concepto;
+    public $numeroPartida;
+    public $totalGastado;
+
     public function __CONSTRUCT()
     {
         try
@@ -18,7 +21,6 @@ class Partida
 
     public function Listar()
     {
-        {
         try
         {
             $result = array();

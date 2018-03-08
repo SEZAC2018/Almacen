@@ -65,11 +65,11 @@
 
                         <td><?php echo $r->nombre;?></td>
                         <td> <?php echo $r->cantidad; ?></td>
-                        <td> <?php echo $r->idAlmacen; ?></td>
+                        <td> <?php echo $r->nomArticulo; ?></td>
                         <td> <?php echo $r->unidadMedidad; ?></td>
                         <td> <?php echo $r->fechaCaducidad; ?></td>
                         <td> <?php echo $r->tipoArticulo; ?></td>
-                        <td> <?php echo $r->idPartida; ?></td>
+                        <td> <?php echo $r->concepto; ?></td>
 
                         <td class="center">
                           <a href="index.php?c=Articulo&a=Crud&idArticulo=<?php echo $r->idArticulo ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>

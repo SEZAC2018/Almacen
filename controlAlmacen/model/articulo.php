@@ -30,7 +30,7 @@ class Articulo
         {
             $result = array();
 
-            $stm = $this->pdo->prepare("SELECT * FROM articulos");
+            $stm = $this->pdo->prepare("SELECT  articulos.idArticulo, articulos.nombre, articulos.cantidad, articulos. unidadMedidad, articulos.fechaCaducidad, articulos.tipoArticulo, almacen.nombre as nomArticulo, partida.concepto  FROM articulos, almacen, partida where articulos.idPartida = partida.idPartida AND articulos.idAlmacen =  almacen.idAlmacen;");
             $stm->execute();
 
             return $stm->fetchAll(PDO::FETCH_OBJ);
@@ -71,8 +71,8 @@ class Articulo
 
     public function Registrar(Articulo $data)
     {
-       try 
-       {
+     try 
+     {
         $sql = "INSERT INTO articulos (nombre,cantidad,idAlmacen,unidadMedidad,fechaCaducidad,tipoArticulo,idPartida) 
         VALUES (?,?,?,?,?,?,?)";
 

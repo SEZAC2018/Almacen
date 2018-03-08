@@ -1,13 +1,16 @@
 <?php
 require_once 'model/articulo.php';
+require_once 'model/partida.php';
+
 
 class ArticuloController{
 
     private $model;
+    private $model1;
     
     public function __CONSTRUCT(){
         $this->model = new Articulo();
-        $this->model = new Partida();
+        $this->model1 = new Partida();
     }
     
     public function Index(){
@@ -32,6 +35,7 @@ class ArticuloController{
         $articulo->fechaCaducidad = $_REQUEST['fechaCaducidad'];
         $articulo->tipoArticulo = $_REQUEST['tipoArticulo'];
         $articulo->idPartida = $_REQUEST['idPartida'];
+
         $articulo->idArticulo > 0 
         ? $this->model->Actualizar($articulo)
         : $this->model->Registrar($articulo);
