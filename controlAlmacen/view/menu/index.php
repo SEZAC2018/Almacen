@@ -120,6 +120,7 @@
 
                <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Calendario</b> </a> </li>
 
+               <li> <a href="?c=Direccion"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Departamento</b> </a> </li>
 
              </ul>
            </li>

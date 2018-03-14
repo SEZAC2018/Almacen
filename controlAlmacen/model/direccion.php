@@ -1,9 +1,9 @@
 <?php
-class Almacen
+class Direccion
 {
     private $pdo;
-    public $idAlmacen;
-    public $almacen;
+    public $idDireccion;
+    public $direccion;
     public function __CONSTRUCT()
     {
         try
@@ -23,7 +23,7 @@ class Almacen
         {
             $result = array();
 
-            $stm = $this->pdo->prepare("SELECT * FROM almacen");
+            $stm = $this->pdo->prepare("SELECT * FROM direccion");
             $stm->execute();
 
             return $stm->fetchAll(PDO::FETCH_OBJ);
@@ -38,7 +38,7 @@ class Almacen
         try 
         {
             $stm = $this->pdo
-            ->prepare("SELECT * FROM almacen WHERE idAlmacen = ?");
+            ->prepare("SELECT * FROM direccion WHERE idDireccion = ?");
 
 
             $stm->execute(array($id));
@@ -59,12 +59,12 @@ class Almacen
 
     }
 
-    public function Registrar(Almacen $data)
+    public function Registrar(Direccion $data)
    // echo "entre";
     {
         try 
         {
-            $sql = "INSERT INTO almacen (nombre) 
+            $sql = "INSERT INTO direccion (nombre) 
             VALUES (?)";
 
             $this->pdo->prepare($sql)

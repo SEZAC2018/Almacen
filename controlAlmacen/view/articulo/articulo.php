@@ -61,19 +61,39 @@
                <input onkeypress="return soloNumeros(event);" type="text" class="form-control"  autofocus name="cantidad" maxlength="12" placeholder="Ingrese la cantidad del Articulo">
              </div>
            </div><!--/form-group-->
-           <div class="form-group">
-            <label class="col-sm-3 control-label">Almacen:<strog class="theme_color">*</strog></label>
-            <div class="col-sm-6">
-              <select class="form-control" name="idAlmacen" required id="ambito">
-                <option value="1"> 
-                 Almacen 1             
-               </option>
-               <option value="2"> 
-                 Almacen 2            
-               </option>
-             </select>
-           </div>
-         </div><!--/form-group-->
+
+
+         
+
+<div class="form-group">
+      <label class="col-sm-3 control-label">Almacen<strog class="theme_color">*</strog></label>
+      <div class="col-sm-6">
+        <select name="idAlmacen" class="form-control" required>
+          <?php if($articulos->idAlmacen==null){ ?>
+          <option value="">
+            Seleccione el Almacen
+          </option>
+          <?php } if($articulos->idAlmacen!=null){ ?>
+          <option value="<?php echo $articulos->idAlmacen ?>">
+            <?php echo $articulos->nombre; ?>
+          </option>
+          <?php } foreach($this->model2->Listar() as $r):
+          if($r->nombre!=$articulos->nombre){ ?>
+          <option value="<?php echo $r->idAlmacen; ?>">
+            <?php echo $r->nombre; ?>
+          </option>
+          <?php } endforeach; ?>
+        </select>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div><!--/form-group-->
+
+
+
+
+
+
+
 
          <div class="form-group">
           <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>

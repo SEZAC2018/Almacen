@@ -57,11 +57,13 @@
 
                         <td class="center">
 
-                          <a href="#" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
 
+                        <a href="index.php?c=Almacen&a=Crud&idAlmacen=<?php echo $r->idAlmacen ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
+
+                        
                         </td>
                         <td class="center">
-                          <a onclick="eliminarMunicipio(<?php echo $r->idMunicipio;?>);" class="btn btn-danger btn-sm" href="#modalEliminar" style="margin-right: 10px;"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
+                          <a onclick="eliminarAlmacen(<?php echo $r->idAlmacen;?>);" class="btn btn-danger btn-sm" href="#modalEliminar" style="margin-right: 10px;"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
                         </td>
 
                       </tr>
@@ -107,7 +109,7 @@
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                   <button type="submit" class="btn btn-danger">Eliminar</button>
                 </form>
-       
+
               </tfoot>
             </table>
           </div><!--/table-responsive-->
@@ -121,9 +123,9 @@
 
 
 
-    eliminarDireccion = function(idMunicipio){
+    eliminarDireccion = function(idAlmacen){
 
-      $('#txtIdMunicipio').val(idMunicipio);
+      $('#txtIdAlmacen').val(idAlmacen);
     };
     deshabilitar = function (){
       $('#btnImportar').attr("disabled", true);

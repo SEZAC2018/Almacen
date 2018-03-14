@@ -1,16 +1,19 @@
 <?php
 require_once 'model/articulo.php';
 require_once 'model/partida.php';
+require_once 'model/almacen.php';
 
 
 class ArticuloController{
 
     private $model;
     private $model1;
+    private $model2;
     
     public function __CONSTRUCT(){
         $this->model = new Articulo();
         $this->model1 = new Partida();
+        $this->model2 = new Almacen();
     }
     
     public function Index(){
