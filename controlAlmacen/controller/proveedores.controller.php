@@ -1,7 +1,7 @@
 <?php
-require_once 'model/proveedor.php';
+require_once 'model/proveedores.php';
 
-class ProveedorController{
+class ProveedoresController{
     
     private $model;
     

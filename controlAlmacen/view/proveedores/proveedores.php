@@ -43,7 +43,8 @@
 
              <label class="col-sm-3 control-label">RFC: <strog class="theme_color">*</strog></label>
              <div class="col-sm-6">
-               <input onchange="mayus(this);"  type="text" class="form-control" maxlength="13" placeholder="Ingrese RFC del Proveedor">
+               <input onchange="mayus(this);"  type="text" class="form-control" name="rfc"  id="rfc" onblur="ValidaRfc(this.value)" maxlength="13" placeholder="Ingrese RFC del Proveedor">
+       
             </div>
           </div><!--/form-group-->
 
@@ -60,7 +61,7 @@
    <div class="form-group">
     <div class="col-sm-offset-7 col-sm-5">
       <button type="submit" class="btn btn-primary">Guardar</button>
-      <a href="?c=Proveedor" class="btn btn-default"> Cancelar</a>
+      <a href="?c=Proveedores" class="btn btn-default"> Cancelar</a>
     </div>
   </div><!--/form-group-->
 </form>

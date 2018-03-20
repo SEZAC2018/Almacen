@@ -42,7 +42,7 @@
                 <label class="col-sm-3 control-label">Nombre(s)<strog class="theme_color">*</strog></label>
                 <div class="col-sm-6">
 
-                 <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombreCompleto" id="nombre" 
+                 <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombreCompleto" id="nombreCompleto" 
                  maxlength="50" required value="" placeholder="Ingrese el Nombre completo del Usuario">
                </div>
              </div><!--/form-group-->
@@ -53,7 +53,7 @@
                 <label class="col-sm-3 control-label">Apellidos(s)<strog class="theme_color">*</strog></label>
                 <div class="col-sm-6">
 
-                 <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="apellido" id="nombre" 
+                 <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="apellido" id="apellido" 
                  maxlength="50" required value="" placeholder="Ingrese los Apellidos">
                </div>
              </div><!--/form-group-->
@@ -64,17 +64,17 @@
               <label class="col-sm-3 control-label">Nombre de Usuario(s)<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
 
-               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombreUsuario" id="nombre" 
+               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombreUsuario" id="nombreUsuario" 
                maxlength="50" required value="" placeholder="Ingrese el nombre de Usuario">
              </div>
            </div><!--/form-group-->
 
 
             <div class="form-group">
-              <label class="col-sm-3 control-label">Nombre de Usuario(s)<strog class="theme_color">*</strog></label>
+              <label class="col-sm-3 control-label">Contraseña<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
 
-               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="contraseña" id="nombre" 
+               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="contraseña" id="contraseña" 
                maxlength="50" required value="" placeholder="Ingrese la Contraseña">
              </div>
            </div><!--/form-group-->

@@ -83,6 +83,7 @@
                   <tfoot>
                     <tr>
                       <th>Nombre Completo</th>
+                      <th>Apellido</th>
                       <th>Nombre Usuario</th>
                       <th>Contraseña</th>
                       <th>direccion</th>
