@@ -44,19 +44,7 @@ class Articulo
 
     public function Obtener($id)
     {
-        try 
-        {
-            $stm = $this->pdo
-            ->prepare("SELECT * FROM articulos WHERE idArticulo = ?");
-
-
-            $stm->execute(array($id));
-            return $stm->fetch(PDO::FETCH_OBJ);
-        } catch (Exception $e) 
-        {
-            die($e->getMessage());
-        }
-
+       
     }
 
     public function Eliminar($id)
@@ -71,28 +59,6 @@ class Articulo
 
     public function Registrar(Articulo $data)
     {
-     try 
-     {
-        $sql = "INSERT INTO articulos (nombre,cantidad,idAlmacen,unidadMedidad,fechaCaducidad,tipoArticulo,idPartida) 
-        VALUES (?,?,?,?,?,?,?)";
 
-        $this->pdo->prepare($sql)
-        ->execute(
-            array(
-                $data->nombre,
-                $data->cantidad, 
-                $data->idAlmacen,
-                $data->unidadMedidad,
-                $data->fechaCaducidad,
-                $data->tipoArticulo,
-                $data->idPartida
-                )
-            );
-    } catch (Exception $e) 
-    {
-        die($e->getMessage());
-    }
-    
-}
 
 }
