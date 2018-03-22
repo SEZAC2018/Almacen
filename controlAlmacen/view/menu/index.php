@@ -125,7 +125,7 @@
 
               </ul>
             </li>
-            <li class="left_nav_active theme_border"> <a href="javascript:void(0);"> <i class="fa fa-envelope"></i> Compras <span class="plus"><i class="fa fa-plus"></i></span> </a>
+            <li class="left_nav_active theme_border"> <a href="javascript:void(0);"> <i class="fa fa-envelope"></i> Articulos<span class="plus"><i class="fa fa-plus"></i></span> </a>
              <ul>
                <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Proveedores</b> </a> </li>
              </ul>
