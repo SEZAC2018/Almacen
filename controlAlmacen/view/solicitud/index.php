@@ -46,9 +46,8 @@
                         <th>Material Solicitado</th>
                         <th>Cantidad Solicitada</th>
                         <th>Cantidad Asignada</th>
-                        <td><center><b>Editar</b></center></td>
-                        <td><center><b>Borrar</b></center></td>
-                        <td><center><b>Asignar</b></center></td>
+                        <td><center><b>Requisición</b></center></td>
+                      
 
                       </tr>
                     </thead>
@@ -62,12 +61,9 @@
                         <td>17</td>
                      
                         <td class="center">
-                          <a href="registrarProveedor.php" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
+                          <a href="registrarProveedor.php" class="btn btn-success btn-icon" role="button"><i class="fa fa-check-square"></i></a>
                         </td>
-                        <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
-                        </td>
-
+                     
                       </tr>
 
                       <tr class="gradeA">
@@ -79,11 +75,9 @@
                     
 
                         <td class="center">
-                          <a href="index.php?c=Direccion&a=Crud&idDireccion=<?php echo $r->idDireccion ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
+                          <a href="registrarProveedor.php" class="btn btn-success btn-icon" role="button"><i class="fa fa-check-square"></i></a>
                         </td>
-                        <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
-                        </td>
+                    
 
                       </tr>
                     </tr>
@@ -95,9 +89,8 @@
                         <th>Material Solicitado</th>
                         <th>Cantidad Solicitada</th>
                           <th>Cantidad Asignada</th>
-                        <td><center><b>Editar</b></center></td>
-                        <td><center><b>Borrar</b></center></td>
-                        <td><center><b>Asignar</b></center></td>
+                        <td><center><b>Requisición</b></center></td>
+                       
 
                     </tr>
                   </tfoot>
@@ -128,7 +121,7 @@
             <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
               <form action="?c=Usuario&a=Eliminar" enctype="multipart/form-data" method="post">
                 <input type="hidden" name="idSolicitud" id="txtIdSolicitud">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-default  " data-dismiss="modal">Cancelar</button>
                 <button type="submit" class="btn btn-danger">Eliminar</button>
               </form>
             </div>

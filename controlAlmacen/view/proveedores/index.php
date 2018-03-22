@@ -1,4 +1,4 @@
-      <!--\\\\\\\ contentpanel start\\\\\\-->
+ <!--\\\\\\\ contentpanel start\\\\\\-->
       <div class="pull-left breadcrumb_admin clear_both">
         <div class="pull-left page_title theme_color">
           <h1>Catálogos</h1>
@@ -26,7 +26,7 @@
                       <b>
 
                         <div class="btn-group" style="margin-right: 10px;">
-                        <a class="btn btn-sm btn-success tooltips" href="?c=Proveedor&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registrar </a>
+                          <a class="btn btn-sm btn-success tooltips" href="?c=Proveedores&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nuevo Proveedor"> <i class="fa fa-plus"></i> Registrar </a>
 
                         </div>
 
@@ -43,8 +43,9 @@
                     <thead>
                       <tr>
                         <th>Nombre</th>
-                        <th>RFC</th>
-                        <th>Direccion</th>
+                        <th>Rfc</th>
+                        <th>Dirección</th>
+                        
                         <td><center><b>Editar</b></center></td>
                         <td><center><b>Borrar</b></center></td>
 
@@ -52,45 +53,40 @@
                     </thead>
                     <tbody>
 
+
+                      <?php foreach ($this->model->Listar() as $r): ?> 
+
+                      
                       <tr class="gradeA">
 
-                        <td>JUAN PEREZ GARCIA</td>
-                        <td>JRAVJ11933443 </td>
-                        <td>Calle del Maiz  </td>
-                        <td class="center">
-                          <a href="registrarProveedor.php" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
-                        </td>
-                        <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
-                        </td>
-
-                      </tr>
-
-                      <tr class="gradeA">
-
-                        <td>Plumas</td>
-                        <td>2 </td>
-                        <td>Almacen 2</td>
+                        <td><?php echo $r->nombre;?></td>
+                        <td> <?php echo $r->rfc; ?></td>
+                        <td> <?php echo $r->direccion; ?></td>
+             
                        
 
                         <td class="center">
-                          <a href="index.php?c=Direccion&a=Crud&idDireccion=<?php echo $r->idDireccion ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
+                          <a href="index.php?c=Proveedores&a=Crud&idProvedor=<?php echo $r->idProvedor ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
                         </td>
                         <td class="center">
-                          <a onclick="eliminarDireccion(<?php echo $r->idDireccion;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
+                          <a onclick="eliminarProveedores(<?php echo $r->idProvedor;?>);" class="btn btn-danger btn-sm" href="#modalEliminar"  data-toggle="modal" data-target="#modalEliminar" role="button"><i class="fa fa-eraser"></i></a>
                         </td>
 
                       </tr>
-                    </tr>
+                    <?php endforeach; ?>
+                    
 
                   </tbody>
                   <tfoot>
                     <tr>
-                        <th>Nombre</th>
-                        <th>RFC</th>
-                        <th>Direccion</th>
-                        <td><center><b>Editar</b></center></td>
-                        <td><center><b>Borrar</b></center></td>
+                      <th>Nombre</th>
+                      <th>Rfc</th>
+                      <th>Dirección</th>
+                     
+
+
+                      <td><center><b>Editar</b></center></td>
+                      <td><center><b>Borrar</b></center></td>
 
                     </tr>
                   </tfoot>
@@ -102,43 +98,44 @@
       </div><!--/row-->
 
 
-    <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content  panel default red_border horizontal_border_1">
-          <div class="modal-body">
-            <div class="row">
-              <div class="block-web">
-                <div class="header">
-                  <h3 class="content-header theme_color">&nbsp;Eliminar Proveedores</h3>
-                </div>
-                <div class="porlets-content" style="margin-bottom: -50px;">
-                  <h4>¿Esta segúro que desea eliminar el Proveedor?</h4>
-                </div><!--/porlets-content-->
-              </div><!--/block-web-->
+      <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content  panel default red_border horizontal_border_1">
+            <div class="modal-body">
+              <div class="row">
+                <div class="block-web">
+                  <div class="header">
+                    <h3 class="content-header theme_color">&nbsp;Eliminar Proveedor</h3>
+                  </div>
+                  <div class="porlets-content" style="margin-bottom: -50px;">
+                    <h4>¿Esta segúro que desea eliminar el Proveedor?</h4>
+                  </div><!--/porlets-content-->
+                </div><!--/block-web-->
+              </div>
             </div>
-          </div>
-          <div class="modal-footer" style="margin-top: -10px;">
-            <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
-              <form action="?c=Proveedor&a=Eliminar" enctype="multipart/form-data" method="post">
-                <input type="hidden" name="idProveedor" id="txtIdProveedor">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-danger">Eliminar</button>
-              </form>
+            <div class="modal-footer" style="margin-top: -10px;">
+              <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
+                <form action="?c=Proveedores&a=Eliminar" enctype="multipart/form-data" method="post">
+                  <input type="hidden" name="idProvedor" id="txtIdProvedor">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </div><!--/modal-content-->
-      </div><!--/modal-dialog-->
-</div><!--/modal-fade-->
+          </div><!--/modal-content-->
+        </div><!--/modal-dialog-->
+      </div><!--/modal-fade-->
 
-<script>
-
+      <script>
 
 
-  eliminarDireccion = function(idProveedor){
-   
-    $('#txtIdArticulo').val(idProveedor);
-  };
-   deshabilitar = function (){
-  $('#btnImportar').attr("disabled", true);
-}
-</script>
+
+        eliminarDireccion = function(idProvedor){
+
+          $('#txtIdProvedor').val(idProvedor);
+        };
+        deshabilitar = function (){
+          $('#btnImportar').attr("disabled", true);
+        }
+      </script>
+
