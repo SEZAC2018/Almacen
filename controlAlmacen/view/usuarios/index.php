@@ -46,7 +46,7 @@
                         <th>Apellido</th>
                         <th>Nombre Usuario</th>
                         <th>Contraseña</th>
-                        <th>direccion</th>
+                        <th>Dirección</th>
                         <td><center><b>Editar</b></center></td>
                         <td><center><b>Borrar</b></center></td>
 
@@ -63,10 +63,10 @@
                         <tr class="gradeA">
 
                          <td> <?php echo $r->nombreCompleto; ?></td>
-                         <td> <?php echo $r->Apellido; ?></td>
+                         <td> <?php echo $r->apellido; ?></td>
                          <td> <?php echo $r->nombreUsuario; ?></td>
                          <td> <?php echo $r->contraseña; ?></td>
-                         <td> <?php echo $r->nombre; ?></td>
+                         <td> <?php echo $r->nombreDireccion; ?></td>
 
                          <td class="center">
                           <a href="index.php?c=Usuarios&a=Crud&idUsuario=<?php echo $r->idUsuario ?>" class="btn btn-primary btn-sm" role="button"><i class="fa fa-edit"></i></a>
@@ -86,7 +86,7 @@
                       <th>Apellido</th>
                       <th>Nombre Usuario</th>
                       <th>Contraseña</th>
-                      <th>direccion</th>
+                      <th>Dirección</th>
                       <td><center><b>Editar</b></center></td>
                       <td><center><b>Borrar</b></center></td>
 

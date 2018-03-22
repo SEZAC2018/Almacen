@@ -27,7 +27,7 @@ class Usuarios
         {
             $result = array();
 
-            $stm = $this->pdo->prepare("SELECT * FROM usuarios");
+            $stm = $this->pdo->prepare("select usuarios.*, direccion.nombre AS nombreDireccion from usuarios, direccion where usuarios.idDireccion = direccion.idDireccion");
             $stm->execute();
 
             return $stm->fetchAll(PDO::FETCH_OBJ);
