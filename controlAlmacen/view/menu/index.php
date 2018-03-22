@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,7 +5,6 @@
   <title>Almacen SEZAC</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-
     <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
@@ -100,28 +98,31 @@
           <br>
           <div class="left_nav_slidebar">
            <ul>
-            <li class="left_nav_active theme_border"><a href="javascript:void(0);"><i class="fa fa-home"></i> Almacen <span class="left_nav_pointer"></span> <span class="plus"><i class="fa fa-plus"></i></span> </a>
+             <li><a href="javascript:void(0);"><i class="fa fa-home"></i> Almacen <span class="left_nav_pointer"></span> <span class="plus"><i class="fa fa-plus"></i></span> </a>
               <ul class="opened" style="display:block">
 
 
-               <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Articulos</b> </a> </li>
+                <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Articulos</b> </a> </li>
 
+                <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Usuarios</b> </a> </li>
+
+                <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Almacenes</b> </a> </li>
+
+                <li> <a href="?c=Solicitud"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Solicitudes</b> </a> </li>
+
+                <li> <a href="?c=Partida"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Partidas</b> </a> </li>
+
+                <li> <a href="?c=Inventario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Inventario</b> </a> </li>
+
+                <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Calendario</b> </a> </li>
+
+                <li> <a href="?c=Direccion"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Departamento</b> </a> </li>
+
+              </ul>
+            </li>
+            <li class="left_nav_active theme_border"> <a href="javascript:void(0);"> <i class="fa fa-envelope"></i> Compras <span class="plus"><i class="fa fa-plus"></i></span> </a>
+             <ul>
                <li> <a href="?c=Proveedor"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Proveedores</b> </a> </li>
-
-               <li> <a href="?c=Usuario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Usuarios</b> </a> </li>
-
-               <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Almacenes</b> </a> </li>
-
-               <li> <a href="?c=Solicitud"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Solicitudes</b> </a> </li>
-
-               <li> <a href="?c=Partida"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Partidas</b> </a> </li>
-
-               <li> <a href="?c=Inventario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Inventario</b> </a> </li>
-
-               <li> <a href="?c=Calendario"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Calendario</b> </a> </li>
-
-               <li> <a href="?c=Direccion"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Departamento</b> </a> </li>
-
              </ul>
            </li>
          </ul>

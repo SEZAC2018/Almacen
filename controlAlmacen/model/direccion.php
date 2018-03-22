@@ -3,7 +3,7 @@ class Direccion
 {
     private $pdo;
     public $idDireccion;
-    public $direccion;
+    public $nombre;
     public function __CONSTRUCT()
     {
         try
@@ -60,7 +60,7 @@ class Direccion
     }
 
     public function Registrar(Direccion $data)
-   // echo "entre";
+   echo "entre";
     {
         try 
         {

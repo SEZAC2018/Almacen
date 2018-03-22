@@ -34,11 +34,11 @@ public function Guardar()
     $direccion->nombre = $_REQUEST['nombre'];
 
     
-    $almacen->idDireccion > 0 
+    $direccion->idDireccion > 0 
     ? $this->model->Actualizar($direccion)
     : $this->model->Registrar($direccion);
 
-    $page= 'view/almacenes/index.php';
+    $page= 'view/direccion/index.php';
     require_once 'view/menu/index.php';
 }
 
