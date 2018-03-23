@@ -1,4 +1,4 @@
-      <!--\\\\\\\ contentpanel start\\\\\\-->
+ <!--\\\\\\\ contentpanel start\\\\\\-->
       <div class="pull-left breadcrumb_admin clear_both">
         <div class="pull-left page_title theme_color">
           <h1>Catálogos</h1>
@@ -140,4 +140,3 @@
           $('#btnImportar').attr("disabled", true);
         }
       </script>
-
