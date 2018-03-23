@@ -63,119 +63,104 @@
            </div><!--/form-group-->
 
 
-         
-
-<div class="form-group">
-      <label class="col-sm-3 control-label">Almacen<strog class="theme_color">*</strog></label>
-      <div class="col-sm-6">
-        <select name="idAlmacen" class="form-control" required>
-          <?php if($articulos->idAlmacen==null){ ?>
-          <option value="">
-            Seleccione el Almacen
-          </option>
-          <?php } if($articulos->idAlmacen!=null){ ?>
-          <option value="<?php echo $articulos->idAlmacen ?>">
-            <?php echo $articulos->nombre; ?>
-          </option>
-          <?php } foreach($this->model2->Listar() as $r):
-          if($r->nombre!=$articulos->nombre){ ?>
-          <option value="<?php echo $r->idAlmacen; ?>">
-            <?php echo $r->nombre; ?>
-          </option>
-          <?php } endforeach; ?>
-        </select>
-        <div class="help-block with-errors"></div>
-      </div>
-    </div><!--/form-group-->
 
 
+           <div class="form-group">
+            <label class="col-sm-3 control-label">Almacen<strog class="theme_color">*</strog></label>
+            <div class="col-sm-6">
+              <select name="idAlmacen" class="form-control" required>
+                <?php if($articulos->idAlmacen==null){ ?>
+                <option value="">
+                  Seleccione el Almacen
+                </option>
+                <?php } if($articulos->idAlmacen!=null){ ?>
+                <option value="<?php echo $articulos->idAlmacen ?>">
+                  <?php echo $articulos->nombre; ?>
+                </option>
+                <?php } foreach($this->model2->Listar() as $r):
+                if($r->nombre!=$articulos->nombre){ ?>
+                <option value="<?php echo $r->idAlmacen; ?>">
+                  <?php echo $r->nombre; ?>
+                </option>
+                <?php } endforeach; ?>
+              </select>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div><!--/form-group-->
 
 
 
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
+            <div class="col-sm-6">
+              <select class="form-control" name="unidadMedidad" required id="ambito">
+                <option value="CAJA"> 
+                 CAJA          
+               </option>
+               <option value="PAQUETE"> 
+                 PAQUETE           
+               </option>
 
+               <option value="PIEZA"> 
+                 PIEZA          
+               </option>
+             </select>
+           </div>
+         </div><!--/form-group-->
 
 
          <div class="form-group">
-          <label class="col-sm-3 control-label">Unidad de Medida:<strog class="theme_color">*</strog></label>
+          <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
           <div class="col-sm-6">
-            <select class="form-control" name="unidadMedidad" required id="ambito">
-              <option value="CAJA"> 
-               CAJA          
-             </option>
-             <option value="PAQUETE"> 
-               PAQUETE           
-             </option>
+            <input type="text" class="form-control mask" name="fechaCaducidad" data-inputmask="'alias': 'date'">
+          </div>
+        </div><!--/form-group-->
 
-             <option value="PIEZA"> 
-               PIEZA          
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
+          <div class="col-sm-6">
+            <select class="form-control" name="tipoArticulo" required id="ambito">
+              <option value="CONSUMIBLE"> 
+                CONSUMIBLE         
+              </option>
+              <option value="PAPELERIA"> 
+               PAPELERIA           
              </option>
            </select>
          </div>
        </div><!--/form-group-->
 
-
        <div class="form-group">
-        <label class="col-sm-3 control-label">Fecha Caducidad: <strog class="theme_color">*</strog></label>
+        <label class="col-sm-3 control-label">Partida<strog class="theme_color">*</strog></label>
         <div class="col-sm-6">
-          <input type="text" class="form-control mask" name="fechaCaducidad" data-inputmask="'alias': 'date'">
+          <select name="idPartida" class="form-control" required>
+            <?php if($articulos->idPartida==null){ ?>
+            <option value="">
+              Seleccione la partida perteniciente
+            </option>
+            <?php } if($articulos->idPartida!=null){ ?>
+            <option value="<?php echo $articulos->idPartida ?>">
+              <?php echo $articulos->concepto; ?>
+            </option>
+            <?php } foreach($this->model1->Listar() as $r):
+            if($r->concepto!=$articulos->concepto){ ?>
+            <option value="<?php echo $r->idPartida; ?>">
+              <?php echo $r->concepto; ?>
+            </option>
+            <?php } endforeach; ?>
+          </select>
+          <div class="help-block with-errors"></div>
         </div>
       </div><!--/form-group-->
 
       <div class="form-group">
-        <label class="col-sm-3 control-label">Tipo Articulo:<strog class="theme_color">*</strog></label>
-        <div class="col-sm-6">
-          <select class="form-control" name="tipoArticulo" required id="ambito">
-            <option value="CONSUMIBLE"> 
-              CONSUMIBLE         
-            </option>
-            <option value="PAPELERIA"> 
-             PAPELERIA           
-           </option>
-
-
-         </select>
-       </div>
-     </div><!--/form-group-->
-
-
-
-
-
-
-
-
-
-     <div class="form-group">
-      <label class="col-sm-3 control-label">Partida<strog class="theme_color">*</strog></label>
-      <div class="col-sm-6">
-        <select name="idPartida" class="form-control" required>
-          <?php if($articulos->idPartida==null){ ?>
-          <option value="">
-            Seleccione la partida perteniciente
-          </option>
-          <?php } if($articulos->idPartida!=null){ ?>
-          <option value="<?php echo $articulos->idPartida ?>">
-            <?php echo $articulos->concepto; ?>
-          </option>
-          <?php } foreach($this->model1->Listar() as $r):
-          if($r->concepto!=$articulos->concepto){ ?>
-          <option value="<?php echo $r->idPartida; ?>">
-            <?php echo $r->concepto; ?>
-          </option>
-          <?php } endforeach; ?>
-        </select>
-        <div class="help-block with-errors"></div>
-      </div>
-    </div><!--/form-group-->
-
-    <div class="form-group">
-      <div class="col-sm-offset-7 col-sm-5">
-        <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="?c=Articulo" class="btn btn-default"> Cancelar</a>
-      </div>
-    </div><!--/form-group-->
-  </form>
-</div><!--/porlets-content-->
+        <div class="col-sm-offset-7 col-sm-5">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+          <a href="?c=Articulo" class="btn btn-default"> Cancelar</a>
+        </div>
+      </div><!--/form-group-->
+    </form>
+  </div><!--/porlets-content-->
 </div><!--/block-web-->
 </div><!--/col-md-12-->
 </div><!--/row-->
