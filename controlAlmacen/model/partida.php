@@ -5,7 +5,6 @@ class Partida
     public $idPartida;
     public $concepto;
     public $numeroPartida;
-    public $totalGastado;
 
     public function __CONSTRUCT()
     {
@@ -55,6 +54,23 @@ class Partida
 
     public function Registrar(Alumno $data)
     {
+          try 
+        {
+            $sql = "INSERT INTO partida (numeroPartida,concepto) 
+            VALUES (?,?)";
+
+            $this->pdo->prepare($sql)
+            ->execute(
+                array(
+                    $data->numeroPartida
+                    $data->concepto
+                    )
+                );
+        } catch (Exception $e) 
+        {
+            die($e->getMessage());
+        
+    }
        
     }
 }

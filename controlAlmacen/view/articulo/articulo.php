@@ -1,4 +1,4 @@
- <div class="pull-left breadcrumb_admin clear_both">
+<div class="pull-left breadcrumb_admin clear_both">
   <div class="pull-left page_title theme_color">
     <h1>Inicio</h1>
     <h2 class="">Articulo</h2>
@@ -46,15 +46,10 @@
                  maxlength="70" required value="" placeholder="Ingrese el Nombre del Articulo">
                </div>
              </div><!--/form-group-->
+
              <div class="form-group">
 
-
-
               <!-- autofocus name="nombre" id="nombre" -->
-
-
-
-
 
               <label class="col-sm-3 control-label">Cantidad articulo: <strog class="theme_color">*</strog></label>
               <div class="col-sm-6">

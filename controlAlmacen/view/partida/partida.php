@@ -30,29 +30,32 @@
           </div>
         </div>
         <div class="porlets-content">
-          <form action="" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
+        <form  id="frm-articulo" action="?c=Partida&a=Guardar" method="POST" class="form-horizontal row-border"  parsley-validate novalidate>
 
+         <div class="form-group">
 
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Concepto<strog class="theme_color">*</strog></label>
+              <!-- autofocus name="nombre" id="nombre" -->
+
+              <label class="col-sm-3 control-label">Numero de Partida: <strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
-               <input autofocus name="idLocalidad" id="idLocalidad" parsley-type="number" class="form-control" required value="" placeholder="Ingrese el nombre de Articulo" />
+               <input onkeypress="return soloNumeros(event);" type="text" class="form-control"  autofocus name="cantidad" maxlength="5" placeholder="Ingrese la cantidad del Articulo">
              </div>
            </div><!--/form-group-->
-           <div class="form-group">
 
-             <label class="col-sm-3 control-label">Numero de Partida: <strog class="theme_color">*</strog></label>
-             <div class="col-sm-6">
-              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Cantidad Articulo"/>
-            </div>
-          </div><!--/form-group-->
+       <div class="form-group">
+                <label class="col-sm-3 control-label">Concepto de Partida<strog class="theme_color">*</strog></label>
+                <div class="col-sm-6">
+
+                 <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="nombre" id="nombre" 
+                 maxlength="70" required value="" placeholder="Ingrese el Nombre de la Partida">
+               </div>
+             </div><!--/form-group-->
+             <div class="form-group">
+
+            
+
               <div class="form-group">
 
-             <label class="col-sm-3 control-label">Total Gastado: <strog class="theme_color">*</strog></label>
-             <div class="col-sm-6">
-              <input name="municipio" type="text" class="form-control" required value="" placeholder="Ingrese Cantidad Articulo"/>
-            </div>
-          </div><!--/form-group-->
 
    <div class="form-group">
     <div class="col-sm-offset-7 col-sm-5">

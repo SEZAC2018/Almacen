@@ -29,7 +29,7 @@
                         <a class="btn btn-sm btn-warning tooltips" href="?c=Partida2&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registro Mensual </a>
 
                         <div class="btn-group" style="margin-right: 10px;">
-                        <a class="btn btn-sm btn-success tooltips" href="?c=Partida&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registros Anuales </a>
+                        <a class="btn btn-sm btn-success tooltips" href="?c=Partida&a=Crud" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Registrar nueva Direccion"> <i class="fa fa-plus"></i> Registro Partidas </a>
 
                         
 

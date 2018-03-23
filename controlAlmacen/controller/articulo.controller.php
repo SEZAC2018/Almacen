@@ -23,10 +23,10 @@ class ArticuloController{
     }
     
     public function Crud(){
-        $articulos = new Articulo();
+        $articulo = new Articulo();
       //echo "soy".$_REQUEST['idAlmacen'];
       if(isset($_REQUEST['idArticulo'])){
-        $almacen = $this->model->Obtener($_REQUEST['idArticulo']);
+        $articulo = $this->model->Obtener($_REQUEST['idArticulo']);
     }
 
     $page= 'view/articulo/articulo.php';
@@ -59,5 +59,3 @@ class ArticuloController{
 
     }
 }
-
-
