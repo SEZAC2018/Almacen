@@ -63,7 +63,7 @@
                         <tr class="gradeA">
 
                          <td> <?php echo $r->nombreCompleto; ?></td>
-                         <td> <?php echo $r->apellido; ?></td>
+                         
                          <td> <?php echo $r->nombreUsuario; ?></td>
                          <td> <?php echo $r->contraseña; ?></td>
                          <td> <?php echo $r->nombreDireccion; ?></td>
@@ -107,7 +107,7 @@
               <div class="row">
                 <div class="block-web">
                   <div class="header">
-                  <h3 class="content-header theme_color">&nbsp;Eliminar Usuarios</h3>
+                    <h3 class="content-header theme_color">&nbsp;Eliminar Usuarios</h3>
                   </div>
                   <div class="porlets-content" style="margin-bottom: -50px;">
                     <h4>¿Esta segúro que desea eliminar el Usuario?</h4>
@@ -118,7 +118,7 @@
             <div class="modal-footer" style="margin-top: -10px;">
               <div class="row col-md-5 col-md-offset-7" style="margin-top: -5px;">
                 <form action="?c=Usuarios&a=Eliminar" enctype="multipart/form-data" method="post">
-                  <input type="hidden" name="idUsuario" id="txtIdUsuario">      <!--/modalIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDontent-->
+                <input type="hidden" name="idUsuario" id="txtIdUsuario">   
                   <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                   <button type="submit" class="btn btn-danger">Eliminar</button>
                 </form>

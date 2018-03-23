@@ -6,7 +6,7 @@ class Usuarios
     public $nombreCompleto;
     public $apellido;
     public $nombreUsuario;
-    public $contraseña;
+    public $contrasena;
     public $idDireccion;
 
     public function __CONSTRUCT()
@@ -23,7 +23,7 @@ class Usuarios
 
     public function Listar()
     {
-            try
+        try
         {
             $result = array();
 
@@ -37,8 +37,9 @@ class Usuarios
             die($e->getMessage());
         }
 
-      
+
     }
+
 
     public function Obtener($id)
     {
@@ -59,12 +60,12 @@ class Usuarios
 
 public function Eliminar($id)
 {
-    
+
 }
 
 public function Actualizar($data)
 {
-   
+
 }
 
 public function Registrar(Usuarios $data)
@@ -80,7 +81,7 @@ public function Registrar(Usuarios $data)
             $data->nombreCompleto,
             $data->apellido,
             $data->nombreUsuario,
-            $data->contraseña,
+            $data->contrasena,
             $data->idDireccion
             )
         );
@@ -90,4 +91,6 @@ public function Registrar(Usuarios $data)
 }
 
 }
+
+
 }

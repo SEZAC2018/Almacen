@@ -71,6 +71,7 @@ class Articulo
 
     public function Registrar(Articulo $data)
     {
+
      try 
      {
         $sql = "INSERT INTO articulos (nombre,cantidad,idAlmacen,unidadMedidad,fechaCaducidad,tipoArticulo,idPartida) 
@@ -93,6 +94,7 @@ class Articulo
         die($e->getMessage());
     }
     
+
 }
 
 }

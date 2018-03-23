@@ -74,7 +74,7 @@
               <label class="col-sm-3 control-label">Contraseña<strog class="theme_color">*</strog></label>
               <div class="col-sm-6">
 
-               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="contraseña" id="contraseña" 
+               <input onchange="mayus(this);" type="text" class="form-control"  autofocus name="contraseña" id="contrasena" 
                maxlength="50" required value="" placeholder="Ingrese la Contraseña">
              </div>
            </div><!--/form-group-->
