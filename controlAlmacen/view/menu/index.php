@@ -103,12 +103,6 @@
 
 
                 <li> <a href="?c=Articulo"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Articulos</b> </a> </li>
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 05cbde740c7c8c101107b9ecf5b35221d747386e
                 <li> <a href="?c=Almacen"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Almacenes</b> </a> </li>
 
                <li> <a href="?c=Proveedores"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Proveedores</b> </a> </li>

@@ -59,6 +59,6 @@ class Articulo
 
     public function Registrar(Articulo $data)
     {
-
+}
 
 }
